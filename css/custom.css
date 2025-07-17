@@ -1,0 +1,72 @@
+/* Bootstrap-First Custom CSS for NCFD Floors */
+
+:root {
+    --bs-primary: #d22f25;
+    --bs-primary-rgb: 210, 47, 37;
+    --ncfd-dark: #161616;
+}
+
+/* Fixed navbar compensation */
+.hero-section {
+    background: linear-gradient(135deg, var(--ncfd-dark) 0%, #2c2c2c 100%);
+    padding-top: 80px;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, var(--ncfd-dark) 0%, #2c2c2c 100%);
+    padding: 120px 0 80px;
+}
+
+/* Brand gradient for service icons */
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #e74c3c 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Image placeholders (temporary) */
+.hero-image-placeholder,
+.feature-image-placeholder {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #e74c3c 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+}
+
+.hero-image-placeholder i,
+.feature-image-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Form branding */
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px;
+    }
+    
+    .hero-image-placeholder,
+    .feature-image-placeholder {
+        margin-top: 1.5rem;
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .hero-image-placeholder i,
+    .feature-image-placeholder i {
+        font-size: 2.5rem;
+    }
+}
