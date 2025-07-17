@@ -6,8 +6,8 @@
     --ncfd-dark: #161616;
 }
 
-/* Fixed navbar compensation */
-.hero-section {
+/* Fixed navbar compensation - only for hero sections without background images */
+.hero-section:not([style*="background-image"]) {
     background: linear-gradient(135deg, var(--ncfd-dark) 0%, #2c2c2c 100%);
     padding-top: 80px;
 }
